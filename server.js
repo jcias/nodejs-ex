@@ -78,6 +78,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/pagecount', function (req, res) {
+  console.log(req.headers);
   // try to initialize the db on every request if it's not already
   // initialized.
   if (!db) {
